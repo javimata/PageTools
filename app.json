@@ -1,5 +1,15 @@
 {
   "expo": {
-    "sdkVersion": "20.0.0"
+  	"name": "PageTools",
+  	"icon": "./assets/img/icon.png",
+    "sdkVersion": "20.0.0",
+    "slug": "pagetools",
+   	"privacy": "public",
+    "ios": {
+      "bundleIdentifier": "com.javimata.pagetools"
+    },
+    "android": {
+      "package": "com.javimata.pagetools"
+    }
   }
 }
