@@ -83,13 +83,16 @@ class HomeScreen extends Component{
                   onSubmitEditing={ () => this.onSendUrl() }
                   style={styles.inputField}
                 />
-                <Button full dark
+                <Button IconRight full dark
                   onPress={() => this.onSendUrl() }
                   title="SEND URL"
                   color="#000"
                   accessibilityLabel="Send url"
                   style={styles.boton}
-                ><Text>SEND URL</Text></Button>
+                >
+                <Text>SEND URL</Text>
+                <Icon name='ios-search' />
+                </Button>
             </KeyboardAvoidingView>
         </View>
       </Container>
@@ -193,6 +196,7 @@ class ResultsScreen extends Component {
               <Card>
                 <CardItem>
                   <Left>
+                    <Icon name='globe' />
                     <Body>
                       <Text>{this.state.resultado.title}</Text>
                       <Text note>{this.state.url}</Text>
@@ -221,17 +225,171 @@ class ResultsScreen extends Component {
               </Card>
 
               <Card>
+
                 <CardItem>
                   <Text>Alexa Rank</Text>
                   <Right>
                     <Badge primary>
-                      <Text>{this.state.resultado.alexaRank}</Text>
+                      <Text>{this.state.resultado.alexaRank ?  this.state.resultado.alexaRank : 'N/A' }</Text>
                     </Badge>
                   </Right>
                  </CardItem>
+
+
+                <CardItem>
+                  <Text>Number of Resourses</Text>
+                  <Right>
+                    <Badge primary>
+                      <Text>{this.state.resultado.pageStats.numberResources}</Text>
+                    </Badge>
+                  </Right>
+                 </CardItem>
+
+
+                <CardItem>
+                  <Text>Number of Hosts</Text>
+                  <Right>
+                    <Badge primary>
+                      <Text>{this.state.resultado.pageStats.numberHosts}</Text>
+                    </Badge>
+                  </Right>
+                 </CardItem>
+
+
+                <CardItem>
+                  <Text>Number of JS</Text>
+                  <Right>
+                    <Badge primary>
+                      <Text>{this.state.resultado.pageStats.numberJsResources}</Text>
+                    </Badge>
+                  </Right>
+                 </CardItem>
+
+
+                <CardItem>
+                  <Text>Number of CSS's</Text>
+                  <Right>
+                    <Badge primary>
+                      <Text>{this.state.resultado.pageStats.numberCssResources}</Text>
+                    </Badge>
+                  </Right>
+                 </CardItem>
+
                </Card>
 
 
+              <Card>
+                <CardItem Header>
+                  <Text>{this.state.resultado.AvoidLandingPageRedirects.summary}</Text>
+                </CardItem>
+                <CardItem>
+                  <Body>
+                    <Text>
+                    </Text>
+                  </Body>
+                </CardItem>
+              </Card>
+
+
+
+              <Card>
+                <CardItem Header>
+                  <Text>{this.state.resultado.EnableGzipCompression.summary}</Text>
+                </CardItem>
+                <CardItem>
+                  <Body>
+                    <Text>
+                    </Text>
+                  </Body>
+                </CardItem>
+              </Card>
+
+
+
+              <Card>
+                <CardItem Header>
+                  <Text>{this.state.resultado.LeverageBrowserCaching.summary}</Text>
+                </CardItem>
+                <CardItem>
+                  <Body>
+                    <Text>
+                    </Text>
+                  </Body>
+                </CardItem>
+              </Card>
+
+
+
+              <Card>
+                <CardItem Header>
+                  <Text>{this.state.resultado.MinifyCss.summary}</Text>
+                </CardItem>
+                <CardItem>
+                  <Body>
+                    <Text>
+                    </Text>
+                  </Body>
+                </CardItem>
+              </Card>
+
+
+              <Card>
+                <CardItem Header>
+                  <Text>{this.state.resultado.MinifyHTML.summary}</Text>
+                </CardItem>
+                <CardItem>
+                  <Body>
+                    <Text>
+                    </Text>
+                  </Body>
+                </CardItem>
+              </Card>
+
+
+              <Card>
+                <CardItem Header>
+                  <Text>{this.state.resultado.MinifyJavaScript.summary}</Text>
+                </CardItem>
+                <CardItem>
+                  <Body>
+                    <Text>
+                    </Text>
+                  </Body>
+                </CardItem>
+              </Card>
+
+
+              <Card>
+                <CardItem Header>
+                  <Text>{this.state.resultado.OptimizeImages.summary}</Text>
+                </CardItem>
+                <CardItem>
+                  <Body>
+                    <Text>
+                    </Text>
+                  </Body>
+                </CardItem>
+              </Card>
+
+
+
+
+              <Card>
+                <CardItem Header>
+                  <Text>{this.state.resultado.PrioritizeVisibleContent.summary}</Text>
+                </CardItem>
+                <CardItem>
+                  <Body>
+                    <Text>
+                    </Text>
+                  </Body>
+                </CardItem>
+              </Card>
+
+
+
+
+              
               <Button iconLeft full dark
                 onPress={() => this.props.navigation.navigate('Home') }
                 style={styles.boton}>
