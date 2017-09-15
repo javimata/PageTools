@@ -1,0 +1,20 @@
+{
+	"name": "English",
+	"vars": {
+		"btnSend": "Analice site",
+		"result": "Result",
+		"score": "Score",
+		"openSite": "Open site",
+		"alexaRank": "Rank Alexa",
+		"numberResourses": "Resources",
+		"numberHosts": "Number of hosts",
+		"numberJS": "Number of JS's",
+		"numberCSS": "Number of CSS's",
+		"back": "Back",
+		"configuration": "Configuration",
+		"language": "Language",
+		"screenshot": "Image of site",
+		"device": "Device",
+		"results": "Results"
+	}
+}

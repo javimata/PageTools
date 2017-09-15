@@ -1,0 +1,13 @@
+{
+	"config": {
+		"lang": "en_US", // Options en_US, es_MX
+		"screenshot": true,
+		"device": "desktop", // Options desktop, mobile
+		"alexa": true,
+		"score": true,
+		"results": true,
+		"setup": {
+			"key": "AIzaSyBhBSeEHgK6PoCXvrxxLC3e2g4iHnxl6Vs"
+		}
+	}
+}

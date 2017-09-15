@@ -1,0 +1,20 @@
+{
+	"name": "Español",
+	"vars": {
+		"btnSend": "Analizar sitio",
+		"result": "Resultado",
+		"score": "Score",
+		"openSite": "Ir al sitio",
+		"alexaRank": "Rank Alexa",
+		"numberResourses": "Recursos",
+		"numberHosts": "Numero de hosts",
+		"numberJS": "Numero de JS's",
+		"numberCSS": "Numero de CSS's",
+		"back": "Regresar",
+		"configuration": "Configuración",
+		"language": "Idioma",
+		"screenshot": "Imagen del sitio",
+		"device": "Dispositivo",
+		"results": "Resultados"
+	}
+}
