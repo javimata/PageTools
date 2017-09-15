@@ -3,13 +3,25 @@
   	"name": "PageTools",
   	"icon": "./assets/img/icon.png",
     "sdkVersion": "20.0.0",
+    "version": "0.1.2",
     "slug": "pagetools",
    	"privacy": "public",
+   	"orientation": "portrait",
     "ios": {
       "bundleIdentifier": "com.javimata.pagetools"
     },
     "android": {
       "package": "com.javimata.pagetools"
-    }
+    },
+    "notification": {
+    	"icon": "./assets/img/icon_48x48_gray.png"
+    },
+    "loading": {
+    	"icon": "./assets/img/icon_48x48.png",
+    	"backgroundImage": "./assets/background.png",
+    	"backgroundColor": "#000000",
+    	"hideExponentText": true
+    },
+    "androidStatusBarColor": "#000000"
   }
 }
