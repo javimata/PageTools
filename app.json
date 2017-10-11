@@ -17,7 +17,7 @@
     	"icon": "./assets/img/icon_48x48_gray.png"
     },
     "loading": {
-    	"icon": "./assets/img/icon_48x48.png",
+    	"icon": "./assets/img/loading-report.gif",
     	"backgroundImage": "./assets/background.png",
     	"backgroundColor": "#000000",
     	"hideExponentText": true
